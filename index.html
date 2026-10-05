@@ -1,55 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>Our Little Universe ❤️</title>
-  </head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
 
-  <body>
-    <div id="app"></div>
+  <meta
+    name="theme-color"
+    content="#02030b"
+  />
 
-    <div class="hud">
-      <div class="topbar">
-        <div class="logo">FOR HER · 20</div>
+  <title>Our Little Universe ❤️</title>
 
-        <div id="step" class="step">
-          01 · THE UNIVERSE
-        </div>
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Three.js import map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <main id="app"></main>
+
+  <!-- Interface -->
+
+  <div class="interface">
+
+    <header class="top-bar">
+
+      <div class="brand">
+        FOR HER · 20
       </div>
 
-      <button id="backButton" class="back">
-        ← Back
+      <div id="chapter" class="chapter">
+        01 · THE UNIVERSE
+      </div>
+
+    </header>
+
+
+    <button
+      id="backButton"
+      class="back-button"
+    >
+      ← Back
+    </button>
+
+
+    <section class="story">
+
+      <div
+        id="eyebrow"
+        class="eyebrow"
+      >
+        CHAPTER ONE
+      </div>
+
+      <h1 id="title">
+        Somewhere in the universe…
+      </h1>
+
+      <p id="description">
+        Two people can be far apart
+        and still belong to the same
+        little universe.
+      </p>
+
+      <button
+        id="actionButton"
+        class="action-button"
+      >
+        Begin the journey ✦
       </button>
 
-      <div id="info" class="info">
-        <div id="kicker" class="kicker">
-          CHAPTER ONE
-        </div>
+    </section>
 
-        <h1 id="title">
-          Somewhere in the universe…
-        </h1>
 
-        <p id="description">
-          Two people can be far apart and still belong
-          to the same little universe.
-        </p>
-
-        <button id="actionButton" class="action">
-          Begin the journey ✦
-        </button>
-      </div>
-
-      <div id="hint" class="hint">
-        Drag · pinch · scroll · tap HER
-      </div>
+    <div
+      id="interactionHint"
+      class="interaction-hint"
+    >
+      Drag · pinch · scroll · tap HER
     </div>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  </div>
+
+
+  <!-- Three.js --<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+
+  <meta
+    name="theme-color"
+    content="#02030b"
+  />
+
+  <title>Our Little Universe ❤️</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Three.js import map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <main id="app"></main>
+
+  <!-- Interface -->
+
+  <div class="interface">
+
+    <header class="top-bar">
+
+      <div class="brand">
+        FOR HER · 20
+      </div>
+
+      <div id="chapter" class="chapter">
+        01 · THE UNIVERSE
+      </div>
+
+    </header>
+
+
+    <button
+      id="backButton"
+      class="back-button"
+    >
+      ← Back
+    </button>
+
+
+    <section class="story">
+
+      <div
+        id="eyebrow"
+        class="eyebrow"
+      >
+        CHAPTER ONE
+      </div>
+
+      <h1 id="title">
+        Somewhere in the universe…
+      </h1>
+
+      <p id="description">
+        Two people can be far apart
+        and still belong to the same
+        little universe.
+      </p>
+
+      <button
+        id="actionButton"
+        class="action-button"
+      >
+        Begin the journey ✦
+      </button>
+
+    </section>
+
+
+    <div
+      id="interactionHint"
+      class="interaction-hint"
+    >
+      Drag · pinch · scroll · tap HER
+    </div>
+
+  </div>
+
+
+  <!-- Three.js -->
+
+  <script
+    type="module"
+    src="./main.js"
+  ></script>
+
+</body>
+</html>
+
+  <script
+    type="module"
+    src="./main.js"
+  ></script>
+
+</body>
 </html>
