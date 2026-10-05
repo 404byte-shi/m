@@ -1,0 +1,218 @@
+:root {
+  --background: #02030b;
+  --pink: #ff69ad;
+  --violet: #927dff;
+  --cyan: #6de7ff;
+  --white: #f8f7ff;
+  --muted: #aaa6b9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  background: var(--background);
+  color: var(--white);
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+body {
+  touch-action: none;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+
+  z-index: 10;
+}
+
+.topbar {
+  position: absolute;
+
+  top: 20px;
+  left: 24px;
+  right: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: #d8d4ea;
+}
+
+.step {
+  padding: 9px 13px;
+
+  border: 1px solid #ffffff20;
+  border-radius: 999px;
+
+  background: #ffffff08;
+
+  color: #bbb7ca;
+
+  font-size: 11px;
+  letter-spacing: 0.1em;
+
+  backdrop-filter: blur(12px);
+}
+
+.info {
+  position: absolute;
+
+  left: 50%;
+  bottom: 8%;
+
+  width: min(90%, 720px);
+
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  pointer-events: auto;
+}
+
+.kicker {
+  color: #ff9fc8;
+
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.info h1 {
+  margin: 10px 0 15px;
+
+  font-size: clamp(36px, 6vw, 76px);
+
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.info p {
+  max-width: 650px;
+
+  margin: auto;
+
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
+button {
+  font: inherit;
+}
+
+.action,
+.back {
+  border: 1px solid #ffffff28;
+
+  background: #ffffff0d;
+
+  color: white;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(14px);
+
+  transition:
+    transform 0.25s,
+    background 0.25s;
+}
+
+.action {
+  margin-top: 20px;
+
+  padding: 13px 20px;
+
+  font-weight: 700;
+}
+
+.action:hover,
+.back:hover {
+  background: #ffffff1c;
+
+  transform: translateY(-2px);
+}
+
+.back {
+  position: absolute;
+
+  top: 65px;
+  left: 24px;
+
+  padding: 10px 15px;
+
+  pointer-events: auto;
+
+  display: none;
+}
+
+.hint {
+  position: absolute;
+
+  right: 24px;
+  bottom: 22px;
+
+  color: #777285;
+
+  font-size: 10px;
+
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    left: 15px;
+    right: 15px;
+  }
+
+  .logo {
+    font-size: 9px;
+  }
+
+  .step {
+    font-size: 9px;
+  }
+
+  .info {
+    bottom: 7%;
+  }
+
+  .hint {
+    right: 15px;
+    bottom: 14px;
+  }
+}
